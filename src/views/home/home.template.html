@@ -1,0 +1,77 @@
+<div class="home home-container">
+  <el-header>
+    <div class="nav">
+      <div class="nav-left">
+        <div class="nav-logo">
+          <img src="../../assets//img/logo.png" alt="">
+        </div>
+        <div class="nav-item nav-item-text">首页</div>
+        <div class="nav-item nav-item-text">下载App</div>
+      </div>
+      <div class="nav-right">
+        <div class="nav-item nav-item-text">
+          <router-link to="/sign_in">登录</router-link>
+        </div>
+        <div class="nav-item">
+          <el-button round>注册</el-button>
+        </div>
+        <div class="nav-item">
+          <el-button type="danger" round>写文章</el-button>
+        </div>
+      </div>
+    </div>
+  </el-header>
+
+  <el-main>
+    <el-row>
+      <el-col class="i-col-left" :span="16">
+        <div class="block">
+          <el-carousel trigger="click" height="250px">
+            <el-carousel-item v-for="item in 4" :key="item">
+              <h3>{{ item }}</h3>
+            </el-carousel-item>
+          </el-carousel>
+        </div>
+        <div class="grid-content bg-purple">
+          <el-row>
+            <el-col class="i-list" :span="24" v-for="(o, index) in 2" :key="o">
+              <el-card :body-style="{ padding: '0px' }">
+                <div class="i-list-item">
+                  <div style="padding: 14px;">
+                    <span class='i-list-title'>好吃的汉堡</span>
+                    <div class="content clearfix">
+                      <span class="i-list-content">转自尤大大 昨天刚刚庆祝了 Vue 发布五周年，今天我们趁热打铁在年三十发布了 Vue 2.6 “Macross”，祝大家新春快乐！
+                        在过去一年...</span>
+                    </div>
+                    <div class="i-list-footer clearfix">
+                      <span class="i-list-author"> 张三</span>
+                      <span><i class="el-icon-edit"></i></span>
+                      <span><i class="el-icon-star-on"></i></span>
+                    </div>
+                  </div>
+                  <img src="../../assets/img/logo.png" class="image i-list-image">
+                </div>
+              </el-card>
+            </el-col>
+          </el-row>
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="grid-content bg-purple-light">
+          <div class="img-board">
+            <img class='i-img-board1' src="../../assets/img/1.png" alt="">
+            <img src="../../assets/img/2.png" alt="">
+            <img src="../../assets/img/3.png" alt="">
+            <img src="../../assets/img/4.png" alt="">
+            <img src="../../assets/img/5.png" alt="">
+            <img src="../../assets/img/6.png" alt="">
+            <img src="../../assets/img/1.png" alt="">
+          </div>
+        </div>
+      </el-col>
+    </el-row>
+
+
+  </el-main>
+
+</div>
