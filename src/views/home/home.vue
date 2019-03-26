@@ -2,8 +2,7 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import HeaderComponent from "@/components/header.vue";
 export default {
   name: "home",
   data() {
@@ -12,7 +11,7 @@ export default {
     };
   },
   components: {
-    HelloWorld
+    HeaderComponent
   },
   created() {}
 };

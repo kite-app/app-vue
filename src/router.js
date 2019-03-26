@@ -26,7 +26,23 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import( /* webpackChunkName: "about" */ './views/user/sign.vue')
-    }
+      component: () => import( /* webpackChunkName: "about" */ './views/sign/sign.vue')
+    },
+    {
+      path: '/sign_up',
+      name: 'sign_up',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import( /* webpackChunkName: "about" */ './views/sign/sign.vue')
+    },
+    {
+      path: '/user',
+      name: 'user',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import( /* webpackChunkName: "about" */ './views/user/user.vue')
+    },
   ]
 })

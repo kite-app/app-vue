@@ -1,29 +1,7 @@
 <div class="home home-container">
-  <el-header>
-    <div class="nav">
-      <div class="nav-left">
-        <div class="nav-logo">
-          <img src="../../assets//img/logo.png" alt="">
-        </div>
-        <div class="nav-item nav-item-text">首页</div>
-        <div class="nav-item nav-item-text">下载App</div>
-      </div>
-      <div class="nav-right">
-        <div class="nav-item nav-item-text">
-          <router-link to="/sign_in">登录</router-link>
-        </div>
-        <div class="nav-item">
-          <el-button round>注册</el-button>
-        </div>
-        <div class="nav-item">
-          <el-button type="danger" round>写文章</el-button>
-        </div>
-      </div>
-    </div>
-  </el-header>
-
+  <HeaderComponent></HeaderComponent>
   <el-main>
-    <el-row>
+    <el-row class="home-list">
       <el-col class="i-col-left" :span="16">
         <div class="block">
           <el-carousel trigger="click" height="250px">

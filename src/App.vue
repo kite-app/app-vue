@@ -11,4 +11,5 @@
 <style lang="less">
 @import url("./assets/styles/index.less");
 @import url("./assets/styles/element-ui.less");
+@import url("./assets/styles/resets.css");
 </style>
